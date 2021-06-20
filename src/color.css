@@ -1,0 +1,43 @@
+:root {
+    --lvf-color--emphasis-high: 0.87;
+    --lvf-color--emphasis-medium: 0.60;
+    --lvf-color--emphasis-low: 0.38;
+    --lvf-color-dark--h: 0;
+    --lvf-color-dark--s: 0%;
+    --lvf-color-dark--l: calc(var(--lvf-color-darker--l)*-1);
+    --lvf-color-dark--hsl: var(--lvf-color-dark--h), var(--lvf-color-dark--s), var(--lvf-color-dark--l);
+    --lvf-color-darker--l: -17%;
+    --lvf-color-light--h: 0;
+    --lvf-color-light--s: 0%;
+    --lvf-color-light--l: calc(100% - var(--lvf-color-lighter--l));
+    --lvf-color-light--hsl: var(--lvf-color-light--h), var(--lvf-color-light--s), var(--lvf-color-light--l);
+    --lvf-color-lighter--l: 20%;
+    --lvf-color-background--h: var(--lvf-color-dark--h);
+    --lvf-color-background--s: var(--lvf-color-dark--s);
+    --lvf-color-background--l: var(--lvf-color-dark--l);
+    --lvf-color-background--hsl: var(--lvf-color-background--h), var(--lvf-color-background--s), var(--lvf-color-background--l);
+    --lvf-color-on-background--h: var(--lvf-color-light--h);
+    --lvf-color-on-background--s: var(--lvf-color-light--s);
+    --lvf-color-on-background--l: calc(var(--lvf-color-on-background--darker--l) + var(--lvf-color-lighter--l));
+    --lvf-color-on-background--darker--l: min(var(--lvf-color-light--l), calc(100% - var(--lvf-color-lighter--l)));
+    --lvf-color-on-background--hsl: var(--lvf-color-on-background--h), var(--lvf-color-on-background--s), var(--lvf-color-on-background--l);
+    --lvf-color-surface--hsl: var(--lvf-color-background--hsl);
+    --lvf-color-on-surface--hsl: var(--lvf-color-on-background--hsl);
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --lvf-color-background--h: var(--lvf-color-light--h);
+        --lvf-color-background--s: var(--lvf-color-light--s);
+        --lvf-color-background--l: var(--lvf-color-light--l);
+        --lvf-color-on-background--h: var(--lvf-color-dark--h);
+        --lvf-color-on-background--s: var(--lvf-color-dark--s);
+        --lvf-color-on-background--l: calc(var(--lvf-color-on-background--lighter--l) + var(--lvf-color-darker--l));
+        --lvf-color-on-background--lighter--l: max(var(--lvf-color-dark--l), calc(var(--lvf-color-darker--l)*-1));
+    }
+}
+@media print {
+    :root {
+        --lvf-color-background--hsl: 0, 0%, 100%;
+        --lvf-color-on-background--hsl: 0, 0%, 0%;
+    }
+}

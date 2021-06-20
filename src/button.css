@@ -1,0 +1,135 @@
+:root {
+    --lvf-button--block-size: calc(2.25rem + var(--lvf-density));
+    --lvf-button--elevation--overlay: var(--lvf-elevation-2--overlay);
+    --lvf-button--elevation--shadow: var(--lvf-elevation-2--shadow);
+    --lvf-button--min-inline-size: 4rem;
+    --lvf-button--shape--size: var(--lvf-shape-small--size);
+}
+.lvf-button {
+    background:
+        linear-gradient(hsl(var(--lvf-color-surface--hsl), var(--lvf-states--overlay--opacity)), hsl(var(--lvf-color-surface--hsl), var(--lvf-states--overlay--opacity))),
+        linear-gradient(var(--lvf-button--elevation--overlay), var(--lvf-button--elevation--overlay)),
+        hsl(var(--lvf-button--color-surface--hsl, var(--lvf-color-on-surface--hsl)));
+    border-radius: var(--lvf-button--shape--size);
+    box-shadow: var(--lvf-button--elevation--shadow);
+    color: hsl(var(--lvf-button--color-on-surface--hsl, var(--lvf-color-surface--hsl)), var(--lvf-color--emphasis-high));
+    display: grid;
+    font: var(--lvf-typography-button);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-button--letter-spacing);
+    gap: 0.25rem;
+    grid: auto / auto-flow auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0.75rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    place-items: center;
+    text-align: center;
+    text-transform: var(--lvf-typography-button--case);
+    transition: all var(--lvf-motion-small);
+    white-space: nowrap;
+    /* Sizes */
+    block-size: var(--lvf-button--block-size);
+    inline-size: max-content;
+    max-block-size: none;
+    max-inline-size: 100%;
+    min-block-size: 0;
+    min-inline-size: var(--lvf-button--min-inline-size);
+}
+.lvf-button__label {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding: 0.25rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    transition: none;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+    min-block-size: 0;
+    min-inline-size: 0;
+}
+.lvf-text-button {
+    background: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-states--overlay--opacity));
+    border-radius: var(--lvf-button--shape--size);
+    box-shadow: none;
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-button);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-button--letter-spacing);
+    gap: 0.25rem;
+    grid: auto / auto-flow auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0.25rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    place-items: center;
+    text-align: center;
+    text-transform: var(--lvf-typography-button--case);
+    transition: all var(--lvf-motion-small);
+    white-space: nowrap;
+    /* Sizes */
+    block-size: var(--lvf-button--block-size);
+    inline-size: max-content;
+    max-block-size: none;
+    max-inline-size: 100%;
+    min-block-size: 0;
+    min-inline-size: var(--lvf-button--min-inline-size);
+}
+.lvf-text-button__label {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding: 0.25rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    transition: none;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+    min-block-size: 0;
+    min-inline-size: 0;
+}
+[type="reset"] {
+    --lvf-button--color-surface--hsl: var(--lvf-color-surface--hsl);
+    --lvf-button--color-on-surface--hsl: var(--lvf-color-on-surface--hsl);
+}
+:any-link:active,
+:enabled:active {
+    --lvf-button--elevation--overlay: var(--lvf-elevation-8--overlay);
+    --lvf-button--elevation--shadow: var(--lvf-elevation-8--shadow);
+}
+:disabled,
+[aria-disabled="true"],
+.lvf-button:not(:any-link):not(:enabled) {
+    --lvf-button--elevation--overlay: var(--lvf-elevation-0--overlay);
+    --lvf-button--elevation--shadow: var(--lvf-elevation-0--shadow);
+}

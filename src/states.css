@@ -1,0 +1,19 @@
+:root {
+    --lvf-states--overlay--opacity: 0.00;
+}
+:any-link:hover,
+:enabled:hover {
+    --lvf-states--overlay--opacity: 0.04;
+}
+:any-link:focus,
+:enabled:focus {
+    --lvf-states--overlay--opacity: 0.12;
+}
+:any-link:checked,
+:enabled:checked {
+    --lvf-states--overlay--opacity: 0.08;
+}
+:any-link:active,
+:enabled:active {
+    --lvf-states--overlay--opacity: 0.16;
+}

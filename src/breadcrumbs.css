@@ -1,0 +1,45 @@
+.lvf-breadcrumbs {
+    color: inherit;
+    display: grid;
+    gap: 0.5rem;
+    grid: auto / auto-flow auto;
+    margin: 0;
+    max-block-size: none;
+    max-inline-size: none;
+    overflow: hidden;
+    place-content: start;
+    place-items: center;
+    white-space: nowrap;
+}
+.lvf-breadcrumbs__item {
+    color: inherit;
+    display: grid;
+    gap: 0.5rem;
+    grid: "lvf-label lvf-separator" auto / auto max-content;
+    margin: 0;
+    max-block-size: none;
+    max-inline-size: none;
+    overflow: hidden;
+    place-items: center;
+    white-space: inherit;
+}
+.lvf-breadcrumbs__label {
+    color: inherit;
+    display: block;
+    grid-area: lvf-label;
+    margin: 0;
+    max-block-size: none;
+    max-inline-size: 100%;
+    overflow: hidden;
+    white-space: inherit;
+}
+.lvf-breadcrumbs__separator {
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-medium));
+    display: block;
+    grid-area: lvf-separator;
+    margin: 0;
+    max-block-size: none;
+    max-inline-size: 100%;
+    overflow: hidden;
+    white-space: inherit;
+}

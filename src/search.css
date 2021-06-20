@@ -1,0 +1,138 @@
+:root {
+    --lvf-search--elevation--overlay: var(--lvf-elevation-1--overlay);
+    --lvf-search--elevation--shadow: var(--lvf-elevation-1--shadow);
+}
+.lvf-search {
+    background: var(--lvf-search--elevation--overlay);
+    border: none;
+    border-radius: var(--lvf-text-field--block-size);
+    box-shadow: var(--lvf-search--elevation--shadow);
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-high));
+    display: grid;
+    font: var(--lvf-typography-body1);
+    font-feature-settings: var(--lvf-typography--features);
+    gap: 0;
+    grid: "lvf-text-field lvf-button" auto / auto max-content;
+    letter-spacing: var(--lvf-typography-body1--letter-spacing);
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    padding-inline-start: 1rem;
+    padding-inline-end: 0.75rem;
+    place-content: start;
+    place-items: center;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-body1--case);
+    transition: background var(--lvf-motion-small), box-shadow var(--lvf-motion-small);
+    white-space: nowrap;
+    /* Sizes */
+    block-size: auto;
+    inline-size: max-content;
+    max-block-size: none;
+    max-inline-size: 100%;
+}
+.lvf-search__button {
+    background: none;
+    border: none;
+    border-inline-start: var(--lvf-divider--size) solid hsl(var(--lvf-color-on-surface--hsl), var(--lvf-divider--opacity));
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    grid-area: lvf-button;
+    letter-spacing: inherit;
+    margin: 0;
+    margin-inline-start: 0.75rem;
+    overflow: visible;
+    padding: 0;
+    padding-inline-start: 0.75rem;
+    text-align: inherit;
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-search__clear-button {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-medium));
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    grid-area: lvf-clear-button;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-search__input {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    grid-area: lvf-input;
+    letter-spacing: inherit;
+    overflow: hidden;
+    padding: calc(0.75rem + var(--lvf-density)/2);
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: 100%;
+}
+.lvf-search__text-field {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: grid;
+    font: inherit;
+    font-feature-settings: inherit;
+    gap: 0.75rem;
+    grid: "lvf-input lvf-clear-button" auto / auto max-content;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    place-content: start;
+    place-items: center;
+    text-align: inherit;
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+:any-link:active,
+:enabled:active,
+.lvf-search:focus-within {
+    --lvf-search--elevation--overlay: var(--lvf-elevation-3--overlay);
+    --lvf-search--elevation--shadow: var(--lvf-elevation-3--shadow);
+}

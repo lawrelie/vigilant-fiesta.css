@@ -1,0 +1,27 @@
+:root {
+    --lvf-list--divider-style: none;
+    --lvf-list--indent: 0rem;
+    --lvf-list--margin-block: 0.5rem;
+}
+.lvf-list {
+    display: block;
+    margin: 0;
+    padding: var(--lvf-list--margin-block);
+    padding-inline-start: var(--lvf-list--indent);
+    padding-inline-end: 0;
+}
+.lvf-list--divider {
+    --lvf-list--divider-style: solid;
+}
+.lvf-list__item {
+    --lvf-list--indent: 3.5rem;
+    --lvf-list--margin-block: 0.0rem;
+    border: none;
+    border-block-end: var(--lvf-divider--size) var(--lvf-list--divider-style) hsl(var(--lvf-color-on-surface--hsl), var(--lvf-divider--opacity));
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.lvf-list__item:last-child {
+    --lvf-list--divider-style: none;
+}

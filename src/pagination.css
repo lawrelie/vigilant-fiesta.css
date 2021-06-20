@@ -1,0 +1,72 @@
+.lvf-pagination {
+    color: inherit;
+    display: grid;
+    font: var(--lvf-typography-body2);
+    font-feature-settings: var(--lvf-typography--features);
+    gap: 1.5rem;
+    grid: auto / auto-flow auto;
+    letter-spacing: var(--lvf-typography-body2--letter-spacing);
+    margin: 0;
+    padding: 0;
+    place-content: start;
+    place-items: center;
+    text-align: center;
+    text-transform: var(--lvf-typography-body2--case);
+    white-space: nowrap;
+}
+.lvf-pagination__item {
+    color: inherit;
+    display: grid;
+    font: inherit;
+    font-feature-settings: inherit;
+    gap: 1.5rem;
+    grid: auto / auto-flow auto;
+    letter-spacing: inherit;
+    margin: 0;
+    padding: 0;
+    place-content: start;
+    place-items: center;
+    text-align: inherit;
+    text-transform: inherit;
+    white-space: inherit;
+}
+.lvf-pagination__label {
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    white-space: inherit;
+}
+.lvf-pagination__separator {
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-medium));
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    white-space: inherit;
+}
+.lvf-pagination-container {
+    color: inherit;
+    display: flex;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    padding: 1rem;
+    padding-inline-start: var(--lvf-layout-grid--margin);
+    padding-inline-end: var(--lvf-layout-grid--margin);
+    place-content: center;
+    place-items: normal;
+    text-align: inherit;
+    text-transform: inherit;
+    white-space: inherit;
+}

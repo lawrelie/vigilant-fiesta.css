@@ -1,0 +1,249 @@
+.lvf-card {
+    background: none;
+    color: inherit;
+    display: grid;
+    gap: 0;
+    grid: "lvf-media lvf-content" auto / max-content auto;
+    inset: auto;
+    margin: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: calc(var(--lvf-layout-grid--margin) - 1rem);
+    padding-block-start: 0;
+    padding-block-end: 0;
+    place-content: normal;
+    place-items: normal;
+    position: relative;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card__action {
+    background: currentColor;
+    color: inherit;
+    display: block;
+    inset: 0;
+    margin: auto;
+    opacity: var(--lvf-states--overlay--opacity);
+    overflow: visible;
+    padding: 0;
+    position: absolute;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card__actions {
+    background: none;
+    color: inherit;
+    display: grid;
+    gap: 0;
+    grid: "lvf-buttons lvf-icons" auto / auto auto;
+    margin: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0;
+    place-content: normal;
+    place-items: end;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card__button-actions {
+    background: none;
+    color: inherit;
+    display: block;
+    grid-area: lvf-buttons;
+    inset: auto;
+    margin: 0;
+    margin-block-end: 0.5rem;
+    opacity: 1;
+    overflow: visible;
+    padding: 0.5rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    position: relative;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: max-content;
+    max-block-size: none;
+    max-inline-size: 100%;
+}
+.lvf-card__content {
+    background: none;
+    color: inherit;
+    display: block;
+    grid-area: lvf-content;
+    margin: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card__icon-actions {
+    background: none;
+    color: inherit;
+    display: block;
+    grid-area: lvf-icons;
+    inset: auto;
+    margin: -0.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: max-content;
+    max-block-size: none;
+    max-inline-size: 100%;
+}
+.lvf-card__media {
+    background: none;
+    color: inherit;
+    display: flex;
+    grid-area: lvf-media;
+    margin: 1rem;
+    margin-inline-end: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0;
+    place-content: normal;
+    place-items: start;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: 5rem;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card__overline {
+    background: none;
+    color: inherit;
+    display: block;
+    inset: auto;
+    margin: 0;
+    margin-block-start: 0.5rem;
+    opacity: 1;
+    overflow: visible;
+    padding: 1rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    position: relative;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: max-content;
+    max-block-size: none;
+    max-inline-size: 100%;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card__primary-title {
+    background: none;
+    color: inherit;
+    display: block;
+    margin: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0.5rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card__supporting-text {
+    background: none;
+    color: inherit;
+    display: block;
+    margin: 0;
+    margin-block-end: 0.5rem;
+    opacity: 1;
+    overflow: visible;
+    padding: 1rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card-subhead {
+    background: none;
+    color: inherit;
+    display: grid;
+    gap: 1em;
+    grid: auto / auto-flow auto;
+    inset: auto;
+    margin: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    place-content: start;
+    place-items: normal;
+    position: relative;
+    text-align: inherit;
+    white-space: nowrap;
+    /* Sizes */
+    block-size: auto;
+    inline-size: max-content;
+    max-block-size: none;
+    max-inline-size: 100%;
+}
+.lvf-card-subhead__item {
+    background: none;
+    color: inherit;
+    display: block;
+    margin: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}

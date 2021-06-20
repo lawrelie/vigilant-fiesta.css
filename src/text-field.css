@@ -1,0 +1,56 @@
+:root {
+    --lvf-text-field--block-size: calc(3rem + var(--lvf-density));
+    --lvf-text-field--min-block-size: var(--lvf-text-field--block-size);
+    --lvf-text-field--outline-size: 0.0625rem;
+    --lvf-text-field--outline-style: solid;
+    --lvf-text-field--shape--size: var(--lvf-shape-small--size);
+    --lvf-text-field--surface: none;
+    --lvf-text-field--overflow: hidden;
+    --lvf-text-field--padding: calc(0.6875rem + var(--lvf-density)/2);
+    --lvf-text-field--padding-inline-start: 0.9375rem;
+    --lvf-text-field--padding-inline-end: 0.6875rem;
+    --lvf-text-field--resize: none;
+    --lvf-text-field--white-space: nowrap;
+}
+.lvf-text-field {
+    background: var(--lvf-text-field--surface);
+    border: var(--lvf-text-field--outline-size) var(--lvf-text-field--outline-style) currentColor;
+    border-radius: var(--lvf-text-field--shape--size);
+    color: var(--lvf-text-field--color-on-surface, hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-high)));
+    display: block;
+    font: var(--lvf-typography-body1);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-body1--letter-spacing);
+    margin: 0;
+    overflow: var(--lvf-text-field--overflow);
+    padding: var(--lvf-text-field--padding);
+    padding-inline-end: var(--lvf-text-field--padding-inline-end);
+    resize: var(--lvf-text-field--resize);
+    text-transform: var(--lvf-typography-body1--case);
+    white-space: var(--lvf-text-field--white-space);
+    /* Sizes */
+    block-size: var(--lvf-text-field--block-size);
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: 100%;
+    min-block-size: var(--lvf-text-field--min-block-size);
+    min-inline-size: 0;
+}
+:any-link:hover,
+:enabled:hover,
+:any-link:focus,
+:enabled:focus,
+:any-link:checked,
+:enabled:checked,
+:any-link:active,
+:enabled:active {
+    --lvf-text-field--outline-size: 0.125rem;
+    --lvf-text-field--padding: calc(0.625rem + var(--lvf-density)/2);
+    --lvf-text-field--padding-inline-start: 0.875rem;
+    --lvf-text-field--padding-inline-end: 0.625rem;
+}
+:any-link:invalid,
+:enabled:invalid {
+    --lvf-text-field--surface: hsl(var(--lvf-color-on-surface--hsl));
+    --lvf-text-field--color-on-surface: hsl(var(--lvf-color-surface--hsl), var(--lvf-color--emphasis-high));
+}

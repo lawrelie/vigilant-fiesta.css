@@ -1,0 +1,259 @@
+:root {
+    --lvf-typography--font: serif;
+    --lvf-typography--weight-light: 300;
+    --lvf-typography--weight-normal: 400;
+    --lvf-typography--weight-medium: 500;
+    --lvf-typography--case-sentence: none;
+    --lvf-typography--case-all-caps: uppercase;
+    --lvf-typography--features: "palt";
+    --lvf-typography-headline1--font: var(--lvf-typography-headline2--font);
+    --lvf-typography-headline1--weight: var(--lvf-typography-headline2--weight);
+    --lvf-typography-headline1--size: 6.1875rem;
+    --lvf-typography-headline1--letter-spacing: calc(var(--lvf-typography-subtitle1--letter-spacing)*-1);
+    --lvf-typography-headline1--case: var(--lvf-typography-headline2--case);
+    --lvf-typography-headline2--font: var(--lvf-typography--font);
+    --lvf-typography-headline2--weight: var(--lvf-typography--weight-light);
+    --lvf-typography-headline2--size: 3.875rem;
+    --lvf-typography-headline2--letter-spacing: calc(var(--lvf-typography-body1--letter-spacing)*-1);
+    --lvf-typography-headline2--case: var(--lvf-typography-headline3--case);
+    --lvf-typography-headline3--font: var(--lvf-typography-headline4--font);
+    --lvf-typography-headline3--weight: var(--lvf-typography-headline4--weight);
+    --lvf-typography-headline3--size: 3.0625rem;
+    --lvf-typography-headline3--letter-spacing: var(--lvf-typography-headline5--letter-spacing);
+    --lvf-typography-headline3--case: var(--lvf-typography-headline4--case);
+    --lvf-typography-headline4: var(--lvf-typography-headline4--weight) var(--lvf-typography-headline4--size) / calc(56/34) var(--lvf-typography-headline4--font);
+    --lvf-typography-headline4--font: var(--lvf-typography-headline5--font);
+    --lvf-typography-headline4--weight: var(--lvf-typography-headline5--weight);
+    --lvf-typography-headline4--size: 2.1875rem;
+    --lvf-typography-headline4--letter-spacing: var(--lvf-typography-body2--letter-spacing);
+    --lvf-typography-headline4--case: var(--lvf-typography-headline5--case);
+    --lvf-typography-headline5: var(--lvf-typography-headline5--weight) var(--lvf-typography-headline5--size) / calc(40/24) var(--lvf-typography-headline5--font);
+    --lvf-typography-headline5--font: var(--lvf-typography-subtitle1--font);
+    --lvf-typography-headline5--weight: var(--lvf-typography-subtitle1--weight);
+    --lvf-typography-headline5--size: 1.5625rem;
+    --lvf-typography-headline5--letter-spacing: 0.000rem;
+    --lvf-typography-headline5--case: var(--lvf-typography-subtitle1--case);
+    --lvf-typography-headline6: var(--lvf-typography-headline6--weight) var(--lvf-typography-headline6--size) / 1.7 var(--lvf-typography-headline6--font);
+    --lvf-typography-headline6--font: var(--lvf-typography-subtitle2--font);
+    --lvf-typography-headline6--weight: var(--lvf-typography-subtitle2--weight);
+    --lvf-typography-headline6--size: 1.3125rem;
+    --lvf-typography-headline6--letter-spacing: var(--lvf-typography-subtitle1--letter-spacing);
+    --lvf-typography-headline6--case: var(--lvf-typography-subtitle2--case);
+    --lvf-typography-subtitle1: var(--lvf-typography-subtitle1--weight) var(--lvf-typography-subtitle1--size) / 1.5 var(--lvf-typography-subtitle1--font);
+    --lvf-typography-subtitle1--font: var(--lvf-typography-body1--font);
+    --lvf-typography-subtitle1--weight: var(--lvf-typography-body1--weight);
+    --lvf-typography-subtitle1--size: var(--lvf-typography-body1--size);
+    --lvf-typography-subtitle1--letter-spacing: 0.009375rem;
+    --lvf-typography-subtitle1--case: var(--lvf-typography-body1--case);
+    --lvf-typography-subtitle2: var(--lvf-typography-subtitle2--weight) var(--lvf-typography-subtitle2--size) / calc(24/14) var(--lvf-typography-subtitle2--font);
+    --lvf-typography-subtitle2--font: var(--lvf-typography--font);
+    --lvf-typography-subtitle2--weight: var(--lvf-typography--weight-medium);
+    --lvf-typography-subtitle2--size: var(--lvf-typography-body2--size);
+    --lvf-typography-subtitle2--letter-spacing: 0.00625rem;
+    --lvf-typography-subtitle2--case: var(--lvf-typography-body2--case);
+    --lvf-typography-body1: var(--lvf-typography-body1--weight) var(--lvf-typography-body1--size) / 1.5 var(--lvf-typography-body1--font);
+    --lvf-typography-body1--font: var(--lvf-typography--font);
+    --lvf-typography-body1--weight: var(--lvf-typography--weight-normal);
+    --lvf-typography-body1--size: 1.0rem;
+    --lvf-typography-body1--letter-spacing: 0.03125rem;
+    --lvf-typography-body1--case: var(--lvf-typography--case-sentence);
+    --lvf-typography-body2: var(--lvf-typography-body2--weight) var(--lvf-typography-body2--size) / calc(24/14) var(--lvf-typography-body2--font);
+    --lvf-typography-body2--font: var(--lvf-typography-body1--font);
+    --lvf-typography-body2--weight: var(--lvf-typography-body1--weight);
+    --lvf-typography-body2--size: 0.875rem;
+    --lvf-typography-body2--letter-spacing: 0.015625rem;
+    --lvf-typography-body2--case: var(--lvf-typography-body1--case);
+    --lvf-typography-button: var(--lvf-typography-button--weight) var(--lvf-typography-button--size) / calc(24/14) var(--lvf-typography-button--font);
+    --lvf-typography-button--font: var(--lvf-typography--font);
+    --lvf-typography-button--weight: var(--lvf-typography--weight-medium);
+    --lvf-typography-button--size: var(--lvf-typography-body2--size);
+    --lvf-typography-button--letter-spacing: 0.078125rem;
+    --lvf-typography-button--case: var(--lvf-typography--case-all-caps);
+    --lvf-typography-caption--font: var(--lvf-typography-body2--font);
+    --lvf-typography-caption--weight: var(--lvf-typography-body2--weight);
+    --lvf-typography-caption--size: 0.75rem;
+    --lvf-typography-caption--letter-spacing: 0.025rem;
+    --lvf-typography-caption--case: var(--lvf-typography-body2--case);
+    --lvf-typography-overline: var(--lvf-typography-overline--weight) var(--lvf-typography-overline--size) / 2.4 var(--lvf-typography-overline--font);
+    --lvf-typography-overline--font: var(--lvf-typography-caption--font);
+    --lvf-typography-overline--weight: var(--lvf-typography-caption--weight);
+    --lvf-typography-overline--size: 0.625rem;
+    --lvf-typography-overline--letter-spacing: 0.09375rem;
+    --lvf-typography-overline--case: var(--lvf-typography-button--case);
+    --lvf-typography-code--font: var(--lvf-typography-monospace--font);
+    --lvf-typography-code--weight: var(--lvf-typography-monospace--weight);
+    --lvf-typography-emphasis--font: sans-serif;
+    --lvf-typography-emphasis--weight: var(--lvf-typography--weight-medium);
+    --lvf-typography-monospace--font: monospace;
+    --lvf-typography-monospace--weight: var(--lvf-typography--weight-normal);
+}
+.lvf-typography {
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 4rem;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    text-align: inherit;
+    text-transform: none;
+}
+.lvf-typography-headline1 {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-headline1);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-headline1--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-headline1--case);
+}
+.lvf-typography-headline2 {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-headline2);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-headline2--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-headline2--case);
+}
+.lvf-typography-headline3 {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-headline3);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-headline3--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-headline3--case);
+}
+.lvf-typography-headline4 {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-headline4);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-headline4--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-headline4--case);
+}
+.lvf-typography-headline5 {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-headline5);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-headline5--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-headline5--case);
+}
+.lvf-typography-headline6 {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-headline6);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-headline6--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-headline6--case);
+}
+.lvf-typography-subtitle1 {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-subtitle1);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-subtitle1--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-subtitle1--case);
+}
+.lvf-typography-subtitle2 {
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-medium));
+    display: block;
+    font: var(--lvf-typography-subtitle2);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-subtitle2--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-subtitle2--case);
+}
+.lvf-typography-body1 {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-body1);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-body1--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-body1--case);
+}
+.lvf-typography-body2 {
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-medium));
+    display: block;
+    font: var(--lvf-typography-body2);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-body2--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-body2--case);
+}
+.lvf-typography-button {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-button);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-button--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-button--case);
+}
+.lvf-typography-caption {
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-medium));
+    display: block;
+    font: var(--lvf-typography-caption);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-caption--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-caption--case);
+}
+.lvf-typography-overline {
+    color: inherit;
+    display: block;
+    font: var(--lvf-typography-overline);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-overline--letter-spacing);
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: inherit;
+    text-transform: var(--lvf-typography-overline--case);
+}

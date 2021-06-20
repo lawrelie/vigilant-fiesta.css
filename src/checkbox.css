@@ -1,0 +1,16 @@
+:root {
+    --lvf-checkbox--icon: var(--lvf-icon-check-box-outline-blank);
+}
+.lvf-checkbox {
+    display: grid;
+    font: var(--lvf-typography-body1);
+    font-feature-settings: var(--lvf-typography--features);
+    gap: 2rem;
+    grid: "lvf-input lvf-label" auto / max-content auto;
+    letter-spacing: var(--lvf-typography-body1--letter-spacing);
+    margin: 0;
+    text-transform: var(--lvf-typography-body1--case);
+}
+:checked {
+    --lvf-checkbox--icon: var(--lvf-icon-check-box);
+}

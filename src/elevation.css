@@ -1,0 +1,24 @@
+:root {
+    --lvf-elevation--overlay-color--hsl: 0, 0%, 100%;
+    --lvf-elevation--shadow-color: hsl(0, 0%, 0%, 0.46);
+    --lvf-elevation-0--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0);
+    --lvf-elevation-0--shadow: 0 0 0 var(--lvf-elevation--shadow-color);
+    --lvf-elevation-1--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.05);
+    --lvf-elevation-1--shadow: 0 0.0625rem 0.125rem var(--lvf-elevation--shadow-color);
+    --lvf-elevation-2--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.07);
+    --lvf-elevation-2--shadow: 0 0.125rem 0.25rem var(--lvf-elevation--shadow-color);
+    --lvf-elevation-3--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.08);
+    --lvf-elevation-3--shadow: 0 0.1875rem 0.375rem var(--lvf-elevation--shadow-color);
+    --lvf-elevation-4--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.09);
+    --lvf-elevation-4--shadow: 0 0.25rem 0.5rem var(--lvf-elevation--shadow-color);
+    --lvf-elevation-6--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.11);
+    --lvf-elevation-6--shadow: 0 0.375rem 0.75rem var(--lvf-elevation--shadow-color);
+    --lvf-elevation-8--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.12);
+    --lvf-elevation-8--shadow: 0 0.5rem 1.0rem var(--lvf-elevation--shadow-color);
+    --lvf-elevation-12--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.14);
+    --lvf-elevation-12--shadow: 0 0.75rem 1.5rem var(--lvf-elevation--shadow-color);
+    --lvf-elevation-16--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.15);
+    --lvf-elevation-16--shadow: 0 1.0rem 2rem var(--lvf-elevation--shadow-color);
+    --lvf-elevation-24--overlay: hsl(var(--lvf-elevation--overlay-color--hsl), 0.16);
+    --lvf-elevation-24--shadow: 0 1.5rem 3rem var(--lvf-elevation--shadow-color);
+}

@@ -1,0 +1,5 @@
+:root {
+    --lvf-shape-small--size: 0.25rem;
+    --lvf-shape-medium--size: var(--lvf-shape-small--size);
+    --lvf-shape-large--size: calc(var(--lvf-shape-medium--size)*6);
+}

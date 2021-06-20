@@ -1,0 +1,9 @@
+.lvf-field-label {
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-medium));
+    display: block;
+    font: var(--lvf-typography-subtitle2);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-subtitle2--letter-spacing);
+    margin: 0;
+    text-transform: var(--lvf-typography-subtitle2--case);
+}

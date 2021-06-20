@@ -1,0 +1,48 @@
+:root {
+    --lvf-layout-grid--columns-1: 1;
+    --lvf-layout-grid--columns-2: 2;
+    --lvf-layout-grid--columns-3: 3;
+    --lvf-layout-grid--columns-4: 4;
+    --lvf-layout-grid--columns-5: var(--lvf-layout-grid--columns-4);
+    --lvf-layout-grid--columns-6: var(--lvf-layout-grid--columns-5);
+    --lvf-layout-grid--columns-7: var(--lvf-layout-grid--columns-6);
+    --lvf-layout-grid--columns-8: var(--lvf-layout-grid--columns-7);
+    --lvf-layout-grid--columns-9: var(--lvf-layout-grid--columns-8);
+    --lvf-layout-grid--columns-10: var(--lvf-layout-grid--columns-9);
+    --lvf-layout-grid--columns-11: var(--lvf-layout-grid--columns-10);
+    --lvf-layout-grid--columns-12: var(--lvf-layout-grid--columns-11);
+    --lvf-layout-grid--gutter: 1rem;
+    --lvf-layout-grid--margin: 1rem;
+}
+@media (min-width: 37.5rem) {
+    :root {
+        --lvf-layout-grid--columns-5: 5;
+        --lvf-layout-grid--columns-6: 6;
+        --lvf-layout-grid--columns-7: 7;
+        --lvf-layout-grid--columns-8: 8;
+        --lvf-layout-grid--gutter: 2rem;
+        --lvf-layout-grid--margin: 2rem;
+    }
+}
+@media (min-width: 56.5625rem) {
+    :root {
+        --lvf-layout-grid--columns-9: 9;
+        --lvf-layout-grid--columns-10: 10;
+        --lvf-layout-grid--columns-11: 11;
+        --lvf-layout-grid--columns-12: 12;
+        --lvf-layout-grid--gutter: calc(2rem + (100vw - 56.5625rem)/334*168);
+        --lvf-layout-grid--margin: calc(2rem + (100vw - 56.5625rem)/334*168);
+    }
+}
+@media (min-width: 77.5rem) {
+    :root {
+        --lvf-layout-grid--gutter: 12.5rem;
+        --lvf-layout-grid--margin: 12.5rem;
+    }
+}
+@media (min-width: 90rem) {
+    :root {
+        --lvf-layout-grid--gutter: calc(12.5rem + (100vw - 90rem)/2);
+        --lvf-layout-grid--margin: calc(12.5rem + (100vw - 90rem)/2);
+    }
+}

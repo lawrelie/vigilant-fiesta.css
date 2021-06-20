@@ -1,0 +1,52 @@
+:root {
+    --lvf-chip--block-size: calc(2rem + var(--lvf-density));
+    --lvf-chip--color--emphasis: var(--lvf-color--emphasis-high);
+    --lvf-chip--surface--opacity: var(--lvf-divider--opacity);
+}
+.lvf-chip {
+    background: hsl(var(--lvf-color-on-surface--hsl), calc(var(--lvf-chip--surface--opacity) + var(--lvf-states--overlay--opacity)));
+    border-radius: var(--lvf-chip--block-size);
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-chip--color--emphasis));
+    display: flex;
+    font: var(--lvf-typography-body2);
+    font-feature-settings: var(--lvf-typography--features);
+    letter-spacing: var(--lvf-typography-body2--letter-spacing);
+    margin: 0;
+    overflow: visible;
+    padding: 0.25rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    place-items: center;
+    text-transform: var(--lvf-typography-body2--case);
+    white-space: nowrap;
+    /* Sizes */
+    block-size: var(--lvf-chip--block-size);
+    inline-size: auto;
+}
+.lvf-chip__text {
+    background: none;
+    border-radius: 0;
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    overflow: hidden;
+    padding: 0;
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+}
+.lvf-chip:not(:any-link):not(:enabled),
+:disabled,
+[aria-disabled="true"] {
+    --lvf-chip--color--emphasis: var(--lvf-color--emphasis-low);
+    --lvf-chip--surface--opacity: 0;
+    --lvf-color-surface--hsl: var(--lvf-color-background--hsl);
+    --lvf-color-on-surface--hsl: var(--lvf-color-on-background--hsl);
+}

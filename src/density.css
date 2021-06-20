@@ -1,0 +1,14 @@
+:root {
+    --lvf-density: calc(-0.25rem*var(--lvf-density--lv));
+    --lvf-density--lv: 0;
+}
+@media (min-width: 37.5rem) {
+    :root {
+        --lvf-density--lv: 1;
+    }
+}
+@media (min-width: 77.5rem) {
+    :root {
+        --lvf-density--lv: 2;
+    }
+}

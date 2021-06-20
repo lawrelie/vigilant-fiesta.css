@@ -1,0 +1,29 @@
+:root {
+    --lvf-form--margin-block: 1rem;
+    --lvf-form__item--margin-inline--additional: 0rem;
+}
+.lvf-form {
+    display: grid;
+    gap: 0.5rem;
+    grid: auto-flow max-content / auto;
+    margin: 0;
+    padding: var(--lvf-form--margin-block);
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+.lvf-form__item {
+    display: flex;
+    flex-flow: column;
+    gap: 0;
+    margin: 0;
+    padding: calc(var(--lvf-layout-grid--margin) + var(--lvf-form__item--margin-inline--additional));
+    padding-block-start: 0;
+    padding-block-end: 0;
+}
+.lvf-form__item > * {
+    --lvf-form--margin-block: 0.5rem;
+    --lvf-layout-grid--margin: 0rem;
+}
+.lvf-form__item--button-actions {
+    --lvf-form__item--margin-inline--additional: -0.5rem;
+}

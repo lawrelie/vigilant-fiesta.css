@@ -1,0 +1,80 @@
+:root {
+    --lvf-dialog--inset: auto;
+    --lvf-dialog--has-max-size: 1;
+    --lvf-dialog--motion: inset var(--lvf-motion--small), max-block-size var(--lvf-motion--small), max-inline-size var(--lvf-motion--small);
+    --lvf-dialog--overflow-block: visible;
+    --lvf-dialog--position: static;
+    --lvf-dialog--scrim--inset: 50%;
+}
+.lvf-dialog {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-color--emphasis-high));
+    display: block;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    transition: none;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-dialog > * {
+    --lvf-layout-grid--gutter: 1rem;
+    --lvf-layout-grid--margin: 1rem;
+}
+.lvf-dialog__container {
+    background: linear-gradient(var(--lvf-elevation-24--overlay), var(--lvf-elevation-24--overlay)) repeat hsl(var(--lvf-color-surface--hsl));
+    border-radius: var(--lvf-shape-medium--size);
+    box-shadow: var(--lvf-elevation-24--shadow);
+    color: inherit;
+    display: block;
+    inset: var(--lvf-dialog--inset);
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: var(--lvf-dialog--overflow-block);
+    overflow-block: var(--lvf-dialog--overflow-block);
+    overflow-inline: hidden;
+    position: var(--lvf-dialog--position);
+    transition: var(--lvf-dialog--motion);
+    z-index: 24;
+    /* Sizes */
+    block-size: max-content;
+    inline-size: max-content;
+    max-block-size: calc((100% - var(--lvf-app-bar--block-size)*2)*var(--lvf-dialog--has-max-size));
+    max-inline-size: calc((100% - var(--lvf-app-bar--block-size)*2)*var(--lvf-dialog--has-max-size));
+}
+.lvf-dialog__scrim {
+    background: currentColor;
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--lvf-elevation--shadow-color);
+    display: block;
+    inset: var(--lvf-dialog--scrim--inset);
+    margin: auto;
+    overflow: visible;
+    position: fixed;
+    transition: var(--lvf-dialog--motion);
+    z-index: 24;
+}
+[aria-hidden="true"] {
+    --lvf-dialog--inset: 50%;
+    --lvf-dialog--has-max-size: 0;
+    --lvf-dialog--overflow-block: hidden;
+    --lvf-dialog--position: fixed;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+[aria-modal="true"] {
+    --lvf-dialog--inset: var(--lvf-layout-grid--margin);
+    --lvf-dialog--has-max-size: 1;
+    --lvf-dialog--overflow-block: auto;
+    --lvf-dialog--position: fixed;
+    --lvf-dialog--scrim--inset: 0%;
+}

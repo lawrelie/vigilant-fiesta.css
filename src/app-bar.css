@@ -1,0 +1,99 @@
+:root {
+    --lvf-app-bar--block-size: calc(var(--lvf-app-bar--margin-block)*2 + var(--lvf-icon--size));
+    --lvf-app-bar--margin-block: calc(1rem + var(--lvf-density)/2);
+}
+.lvf-app-bar {
+    --lvf-layout-grid--gutter: 1rem;
+    --lvf-layout-grid--margin: 1rem;
+    background: none;
+    display: grid;
+    font: var(--lvf-typography-headline6--weight) var(--lvf-typography-headline6--size) / 1.4 var(--lvf-typography-headline6--font);
+    font-feature-settings: var(--lvf-typography--features);
+    gap: 0;
+    grid: "lvf-content lvf-actions" auto / auto max-content;
+    letter-spacing: var(--lvf-typography-headline6--letter-spacing);
+    margin: 0;
+    overflow: visible;
+    padding: calc(var(--lvf-layout-grid--margin) - 1rem);
+    padding-block-start: 0;
+    padding-block-end: 0;
+    text-transform: var(--lvf-typography-headline6--case);
+    white-space: nowrap;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+}
+.lvf-app-bar__actions {
+    background: none;
+    display: grid;
+    font: inherit;
+    font-feature-settings: inherit;
+    gap: 1.5rem;
+    grid: auto / auto-flow max-content;
+    grid-area: lvf-actions;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 1rem;
+    padding-block-start: var(--lvf-app-bar--margin-block);
+    padding-block-end: var(--lvf-app-bar--margin-block);
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+}
+.lvf-app-bar__content {
+    background: none;
+    display: grid;
+    font: inherit;
+    font-feature-settings: inherit;
+    gap: 0;
+    grid: "lvf-navigation-icon lvf-title" auto / max-content auto;
+    grid-area: lvf-content;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+}
+.lvf-app-bar__navigation-icon {
+    background: none;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    grid-area: lvf-navigation-icon;
+    letter-spacing: inherit;
+    margin: 1rem;
+    margin-block-start: var(--lvf-app-bar--margin-block);
+    margin-block-end: var(--lvf-app-bar--margin-block);
+    overflow: visible;
+    padding: 0;
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: var(--lvf-icon--size);
+    inline-size: auto;
+}
+.lvf-app-bar__title {
+    background: none;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    grid-area: lvf-title;
+    letter-spacing: inherit;
+    margin: 1rem;
+    margin-block-start: 0.75rem;
+    margin-block-end: 1rem;
+    overflow: hidden;
+    padding: 0;
+    text-transform: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+}

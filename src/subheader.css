@@ -1,0 +1,8 @@
+.lvf-subheader {
+    display: block;
+    margin: 0;
+    padding: 1rem;
+    padding-inline-start: var(--lvf-layout-grid--margin);
+    padding-inline-end: var(--lvf-layout-grid--margin);
+    text-align: inherit;
+}

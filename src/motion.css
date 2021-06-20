@@ -1,0 +1,11 @@
+:root {
+    --lvf-motion--speed-small: 100ms;
+    --lvf-motion--speed-medium-expanding: calc(var(--lvf-motion--speed-medium-collapsing) + 50ms);
+    --lvf-motion--speed-medium-collapsing: calc(var(--lvf-motion--speed-small)*2);
+    --lvf-motion--speed-large-expanding: calc(var(--lvf-motion--speed-large-collapsing) + 50ms);
+    --lvf-motion--speed-large-collapsing: var(--lvf-motion--speed-medium-expanding);
+    --lvf-motion--easing-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
+    --lvf-motion--easing-decelerated: cubic-bezier(0.0, 0.0, 0.2, 1);
+    --lvf-motion--easing-accelerated: cubic-bezier(0.4, 0.0, 1, 1);
+    --lvf-motion-small: var(--lvf-motion--speed-small) var(--lvf-motion--easing-standard);
+}
