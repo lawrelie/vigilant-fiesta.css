@@ -79,6 +79,13 @@
 [aria-label="auto-fix-off"] {
     --lvf-icon: var(--lvf-icon--material--auto-fix-off--sharp);
 }
+[aria-label="chat"] {
+    --lvf-icon: var(--lvf-icon--material--chat--sharp);
+}
+[aria-label="chat-bubble"],
+[aria-label="mode-comment"] {
+    --lvf-icon: var(--lvf-icon--material--chat-bubble--sharp);
+}
 [aria-label="check-box"] {
     --lvf-icon: var(--lvf-icon-check-box);
 }
