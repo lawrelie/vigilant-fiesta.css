@@ -118,6 +118,7 @@
 [aria-label="more-block"] {
     --lvf-icon: var(--lvf-icon--material--more-vert--sharp);
 }
+[aria-label="more"],
 [aria-label="more-inline"] {
     --lvf-icon: var(--lvf-icon--material--more-horiz--sharp);
 }
