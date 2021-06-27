@@ -115,6 +115,9 @@
 [aria-label="expand-more"] {
     --lvf-icon: var(--lvf-icon--material--expand-more--sharp);
 }
+[aria-label="mode-edit"] {
+    --lvf-icon: var(--lvf-icon--material--mode-edit--sharp);
+}
 [aria-label="more-block"] {
     --lvf-icon: var(--lvf-icon--material--more-vert--sharp);
 }
