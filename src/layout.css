@@ -20,7 +20,7 @@
         --lvf-layout-grid--columns-6: 6;
         --lvf-layout-grid--columns-7: 7;
         --lvf-layout-grid--columns-8: 8;
-        --lvf-layout-grid--gutter: 2rem;
+        --lvf-layout-grid--gutter: 1.5rem;
         --lvf-layout-grid--margin: 2rem;
     }
 }
@@ -30,23 +30,33 @@
         --lvf-layout-grid--columns-10: 10;
         --lvf-layout-grid--columns-11: 11;
         --lvf-layout-grid--columns-12: 12;
-        --lvf-layout-grid--gutter: calc(2rem + (100vw - 56.5625rem)/334*168);
         --lvf-layout-grid--margin: calc(2rem + (100vw - 56.5625rem)/334*168);
     }
 }
 @media (min-width: 77.5rem) {
     :root {
-        --lvf-layout-grid--gutter: 12.5rem;
         --lvf-layout-grid--margin: 12.5rem;
     }
 }
 @media (min-width: 90rem) {
     :root {
-        --lvf-layout-grid--gutter: calc(12.5rem + (100vw - 90rem)/2);
         --lvf-layout-grid--margin: calc(12.5rem + (100vw - 90rem)/2);
     }
 }
 .lvf-layout {
     display: block;
     margin: 0;
+    padding: 0;
+}
+.lvf-layout-grid {
+    display: grid;
+    gap: var(--lvf-layout-grid--gutter);
+    grid: auto-flow auto / repeat(calc(var(--lvf-layout-grid--columns-12)/4), 1fr);
+    margin: 0;
+    padding: 0;
+    padding-inline-start: var(--lvf-layout-grid--margin);
+    padding-inline-end: var(--lvf-layout-grid--margin);
+}
+.lvf-layout-grid > * {
+    --lvf-layout-grid--margin: 0rem;
 }
