@@ -46,3 +46,7 @@
         --lvf-layout-grid--margin: calc(12.5rem + (100vw - 90rem)/2);
     }
 }
+.lvf-layout {
+    display: block;
+    margin: 0;
+}
