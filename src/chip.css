@@ -1,11 +1,17 @@
 :root {
     --lvf-chip--block-size: calc(2rem + var(--lvf-density));
     --lvf-chip--color--emphasis: var(--lvf-color--emphasis-high);
+    --lvf-chip--elevation--overlay: var(--lvf-elevation-0--overlay);
+    --lvf-chip--elevation--shadow: var(--lvf-elevation-0--shadow);
     --lvf-chip--surface--opacity: var(--lvf-divider--opacity);
 }
 .lvf-chip {
-    background: hsl(var(--lvf-color-on-surface--hsl), calc(var(--lvf-chip--surface--opacity) + var(--lvf-states--overlay--opacity)));
+    background:
+        linear-gradient(hsl(var(--lvf-color-on-surface--hsl), var(--lvf-states--overlay--opacity)), hsl(var(--lvf-color-on-surface--hsl), var(--lvf-states--overlay--opacity))),
+        linear-gradient(var(--lvf-chip--elevation--overlay), var(--lvf-chip--elevation--overlay)),
+        hsl(var(--lvf-color-on-surface--hsl), calc(var(--lvf-chip--surface--opacity)));
     border-radius: var(--lvf-chip--block-size);
+    box-shadow: var(--lvf-chip--elevation--shadow);
     color: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-chip--color--emphasis));
     display: flex;
     font: var(--lvf-typography-body2);
@@ -18,6 +24,7 @@
     padding-block-end: 0;
     place-items: center;
     text-transform: var(--lvf-typography-body2--case);
+    transition: all var(--lvf-motion-small);
     white-space: nowrap;
     /* Sizes */
     block-size: var(--lvf-chip--block-size);
@@ -26,6 +33,7 @@
 .lvf-chip__text {
     background: none;
     border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     font: inherit;
@@ -37,15 +45,23 @@
     overflow: hidden;
     padding: 0;
     text-transform: inherit;
+    transition: none;
     white-space: inherit;
     /* Sizes */
     block-size: auto;
     inline-size: auto;
 }
+:any-link:active,
+:enabled:active {
+    --lvf-chip--elevation--overlay: var(--lvf-elevation-2--overlay);
+    --lvf-chip--elevation--shadow: var(--lvf-elevation-2--shadow);
+}
 .lvf-chip:not(:any-link):not(:enabled),
 :disabled,
 [aria-disabled="true"] {
     --lvf-chip--color--emphasis: var(--lvf-color--emphasis-low);
+    --lvf-chip--elevation--overlay: var(--lvf-elevation-0--overlay);
+    --lvf-chip--elevation--shadow: var(--lvf-elevation-0--shadow);
     --lvf-chip--surface--opacity: calc(var(--lvf-divider--opacity)*var(--lvf-color--emphasis-low));
     --lvf-color-surface--hsl: var(--lvf-color-background--hsl);
     --lvf-color-on-surface--hsl: var(--lvf-color-on-background--hsl);
