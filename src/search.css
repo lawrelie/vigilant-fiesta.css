@@ -53,6 +53,7 @@
     position: static;
     text-align: inherit;
     text-transform: inherit;
+    transition: none;
     white-space: inherit;
     /* Sizes */
     block-size: auto;
@@ -77,6 +78,7 @@
     position: static;
     text-align: inherit;
     text-transform: inherit;
+    transition: none;
     white-space: inherit;
     /* Sizes */
     block-size: auto;
@@ -102,6 +104,7 @@
     position: static;
     text-align: inherit;
     text-transform: inherit;
+    transition: none;
     white-space: inherit;
     /* Sizes */
     block-size: auto;
@@ -129,6 +132,7 @@
     position: static;
     text-align: inherit;
     text-transform: inherit;
+    transition: none;
     white-space: inherit;
     /* Sizes */
     block-size: auto;
