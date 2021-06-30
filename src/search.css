@@ -13,6 +13,7 @@
     font-feature-settings: var(--lvf-typography--features);
     gap: 0;
     grid: "lvf-text-field lvf-button" auto / auto max-content;
+    inset: auto;
     letter-spacing: var(--lvf-typography-body1--letter-spacing);
     margin: 0;
     overflow: visible;
@@ -21,6 +22,7 @@
     padding-inline-end: 0.75rem;
     place-content: start;
     place-items: center;
+    position: relative;
     text-align: inherit;
     text-transform: var(--lvf-typography-body1--case);
     transition: background var(--lvf-motion-small), box-shadow var(--lvf-motion-small);
@@ -48,6 +50,7 @@
     overflow: visible;
     padding: 0;
     padding-inline-start: 0.75rem;
+    position: static;
     text-align: inherit;
     text-transform: inherit;
     white-space: inherit;
@@ -71,6 +74,7 @@
     margin: 0;
     overflow: visible;
     padding: 0;
+    position: static;
     text-align: inherit;
     text-transform: inherit;
     white-space: inherit;
@@ -95,6 +99,7 @@
     padding: calc(0.75rem + var(--lvf-density)/2);
     padding-inline-start: 0;
     padding-inline-end: 0;
+    position: static;
     text-align: inherit;
     text-transform: inherit;
     white-space: inherit;
@@ -121,6 +126,7 @@
     padding: 0;
     place-content: start;
     place-items: center;
+    position: static;
     text-align: inherit;
     text-transform: inherit;
     white-space: inherit;
