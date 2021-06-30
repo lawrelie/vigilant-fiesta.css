@@ -59,17 +59,17 @@
     position: fixed;
     transition: var(--lvf-dialog--motion);
     z-index: 24;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
 }
 [aria-hidden="true"] {
     --lvf-dialog--inset: 50%;
     --lvf-dialog--has-max-size: 0;
     --lvf-dialog--overflow-block: hidden;
     --lvf-dialog--position: fixed;
-    /* Sizes */
-    block-size: auto;
-    inline-size: auto;
-    max-block-size: none;
-    max-inline-size: none;
 }
 [aria-modal="true"] {
     --lvf-dialog--inset: var(--lvf-layout-grid--margin);
