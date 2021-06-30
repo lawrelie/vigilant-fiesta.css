@@ -47,6 +47,7 @@
     display: block;
     margin: 0;
     padding: 0;
+    text-align: inherit;
 }
 .lvf-layout-grid {
     display: grid;
@@ -56,6 +57,7 @@
     padding: 0;
     padding-inline-start: var(--lvf-layout-grid--margin);
     padding-inline-end: var(--lvf-layout-grid--margin);
+    text-align: inherit;
 }
 .lvf-layout-grid > * {
     --lvf-layout-grid--margin: 0rem;
