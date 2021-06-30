@@ -43,7 +43,7 @@
     overflow: visible;
     padding: 0;
     position: absolute;
-    transition: all var(--lvf-motion-small);
+    transition: inset var(--lvf-motion-small), opacity var(--lvf-motion-small);
     /* Sizes */
     block-size: auto;
     inline-size: auto;

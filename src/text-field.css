@@ -1,6 +1,7 @@
 :root {
     --lvf-text-field--block-size: calc(3rem + var(--lvf-density));
     --lvf-text-field--min-block-size: var(--lvf-text-field--block-size);
+    --lvf-text-field--motion: border var(--lvf-motion-small), padding var(--lvf-motion-small);
     --lvf-text-field--outline-size: 0.0625rem;
     --lvf-text-field--outline-style: solid;
     --lvf-text-field--shape--size: var(--lvf-shape-small--size);
@@ -27,6 +28,7 @@
     padding-inline-end: var(--lvf-text-field--padding-inline-end);
     resize: var(--lvf-text-field--resize);
     text-transform: var(--lvf-typography-body1--case);
+    transition: var(--lvf-text-field--motion);
     white-space: var(--lvf-text-field--white-space);
     /* Sizes */
     block-size: var(--lvf-text-field--block-size);

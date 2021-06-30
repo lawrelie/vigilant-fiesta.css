@@ -24,7 +24,7 @@
     padding-block-end: 0;
     place-items: center;
     text-transform: var(--lvf-typography-body2--case);
-    transition: all var(--lvf-motion-small);
+    transition: background var(--lvf-motion-small), box-shadow var(--lvf-motion-small);
     white-space: nowrap;
     /* Sizes */
     block-size: var(--lvf-chip--block-size);

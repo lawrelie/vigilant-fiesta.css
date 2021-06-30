@@ -3,6 +3,7 @@
     --lvf-button--elevation--overlay: var(--lvf-elevation-2--overlay);
     --lvf-button--elevation--shadow: var(--lvf-elevation-2--shadow);
     --lvf-button--min-inline-size: 4rem;
+    --lvf-button--motion: background var(--lvf-motion-small), box-shadow var(--lvf-motion-small);
     --lvf-button--shape--size: var(--lvf-shape-small--size);
 }
 .lvf-button {
@@ -27,7 +28,7 @@
     place-items: center;
     text-align: center;
     text-transform: var(--lvf-typography-button--case);
-    transition: all var(--lvf-motion-small);
+    transition: var(--lvf-button--motion);
     white-space: nowrap;
     /* Sizes */
     block-size: var(--lvf-button--block-size);
