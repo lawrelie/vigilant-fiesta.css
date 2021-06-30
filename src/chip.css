@@ -46,7 +46,7 @@
 :disabled,
 [aria-disabled="true"] {
     --lvf-chip--color--emphasis: var(--lvf-color--emphasis-low);
-    --lvf-chip--surface--opacity: 0;
+    --lvf-chip--surface--opacity: calc(var(--lvf-divider--opacity)*var(--lvf-color--emphasis-low));
     --lvf-color-surface--hsl: var(--lvf-color-background--hsl);
     --lvf-color-on-surface--hsl: var(--lvf-color-on-background--hsl);
 }
