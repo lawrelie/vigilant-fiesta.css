@@ -134,6 +134,9 @@
 [aria-label="post-add"] {
     --lvf-icon: var(--lvf-icon--material--post-add--sharp);
 }
+[aria-label="push-pin"] {
+    --lvf-icon: var(--lvf-icon--material--push-pin--sharp);
+}
 [aria-label="radio-button-checked"] {
     --lvf-icon: var(--lvf-icon-radio-button-checked);
 }
