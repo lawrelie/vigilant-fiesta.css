@@ -13,7 +13,6 @@
 }
 .lvf-list--divider {
     --lvf-list--divider-style: solid;
-    --lvf-list__item--padding-block: 0.5rem;
 }
 .lvf-list__item {
     --lvf-list--indent: 3.5rem;
