@@ -2,6 +2,7 @@
     --lvf-list--divider-style: none;
     --lvf-list--indent: 0rem;
     --lvf-list--margin-block: 0.5rem;
+    --lvf-list__item--padding-block: 0.0rem;
 }
 .lvf-list {
     display: block;
@@ -12,6 +13,7 @@
 }
 .lvf-list--divider {
     --lvf-list--divider-style: solid;
+    --lvf-list__item--padding-block: 0.5rem;
 }
 .lvf-list__item {
     --lvf-list--indent: 3.5rem;
@@ -21,6 +23,8 @@
     display: block;
     margin: 0;
     padding: 0;
+    padding-block-start: var(--lvf-list__item--padding-block);
+    padding-block-end: var(--lvf-list__item--padding-block);
 }
 .lvf-list__item:last-child {
     --lvf-list--divider-style: none;
