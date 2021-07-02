@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "src/action.css";
 @import "src/app-bar.css";
-@import "src/breadcrumbs.css?0.1.1-alpha";
+@import "src/breadcrumbs.css";
 @import "src/button.css";
 @import "src/card.css";
 @import "src/checkbox.css";
