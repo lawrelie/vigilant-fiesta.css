@@ -17,6 +17,7 @@
     padding: calc(var(--lvf-layout-grid--margin) - 1rem);
     padding-block-start: 0;
     padding-block-end: 0;
+    text-align: inherit;
     text-transform: var(--lvf-typography-headline6--case);
     white-space: nowrap;
     /* Sizes */
@@ -37,6 +38,7 @@
     padding: 1rem;
     padding-block-start: var(--lvf-app-bar--margin-block);
     padding-block-end: var(--lvf-app-bar--margin-block);
+    text-align: inherit;
     text-transform: inherit;
     white-space: inherit;
     /* Sizes */
@@ -55,6 +57,7 @@
     margin: 0;
     overflow: visible;
     padding: 0;
+    text-align: inherit;
     text-transform: inherit;
     white-space: inherit;
     /* Sizes */
@@ -73,6 +76,7 @@
     margin-block-end: var(--lvf-app-bar--margin-block);
     overflow: visible;
     padding: 0;
+    text-align: inherit;
     text-transform: inherit;
     white-space: inherit;
     /* Sizes */
@@ -91,6 +95,7 @@
     margin-block-end: 1rem;
     overflow: hidden;
     padding: 0;
+    text-align: inherit;
     text-transform: inherit;
     white-space: inherit;
     /* Sizes */
