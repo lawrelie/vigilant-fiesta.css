@@ -115,6 +115,12 @@
 [aria-label="expand-more"] {
     --lvf-icon: var(--lvf-icon--material--expand-more--sharp);
 }
+[aria-label="lock"] {
+    --lvf-icon: var(--lvf-icon--material--lock--sharp);
+}
+[aria-label="lock-open"] {
+    --lvf-icon: var(--lvf-icon--material--lock-open--sharp);
+}
 [aria-label="mode-edit"] {
     --lvf-icon: var(--lvf-icon--material--mode-edit--sharp);
 }
