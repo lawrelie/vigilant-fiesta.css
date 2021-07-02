@@ -61,7 +61,7 @@
     font-feature-settings: inherit;
     letter-spacing: inherit;
     margin: 0;
-    padding: 1rem;
+    padding: calc(1rem + var(--lvf-density)/2);
     padding-inline-start: var(--lvf-layout-grid--margin);
     padding-inline-end: var(--lvf-layout-grid--margin);
     place-content: center;

@@ -13,8 +13,8 @@
     opacity: 1;
     overflow: visible;
     padding: calc(var(--lvf-layout-grid--margin) - 1rem);
-    padding-block-start: 0.5rem;
-    padding-block-end: 0.5rem;
+    padding-block-start: calc(0.5rem + var(--lvf-density)/2);
+    padding-block-end: calc(0.5rem + var(--lvf-density)/2);
     place-content: normal;
     place-items: normal;
     position: relative;
