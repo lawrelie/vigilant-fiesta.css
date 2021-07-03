@@ -138,13 +138,14 @@
     display: grid;
     gap: 0.75rem;
     grid: auto / auto-flow max-content;
+    inset: auto;
     margin: 0;
     opacity: 1;
     overflow: visible;
     padding: 0;
     place-content: normal;
     place-items: normal;
-    position: static;
+    position: relative;
     text-align: inherit;
     white-space: inherit;
     /* Sizes */
