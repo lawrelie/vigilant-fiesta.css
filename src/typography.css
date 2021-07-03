@@ -69,6 +69,7 @@
     --lvf-typography-button--size: var(--lvf-typography-body2--size);
     --lvf-typography-button--letter-spacing: 0.078125rem;
     --lvf-typography-button--case: var(--lvf-typography--case-all-caps);
+    --lvf-typography-caption: var(--lvf-typography-caption--weight) var(--lvf-typography-caption--size) / 2 var(--lvf-typography-caption--font);
     --lvf-typography-caption--font: var(--lvf-typography-body2--font);
     --lvf-typography-caption--weight: var(--lvf-typography-body2--weight);
     --lvf-typography-caption--size: 0.75rem;
