@@ -24,6 +24,9 @@
     block-size: auto;
     inline-size: auto;
 }
+.lvf-app-bar > * {
+    --lvf-layout-grid--margin: 0rem;
+}
 .lvf-app-bar__actions {
     background: none;
     display: grid;

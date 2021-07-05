@@ -26,6 +26,9 @@
     max-block-size: none;
     max-inline-size: none;
 }
+.lvf-card > * {
+    --lvf-layout-grid--margin: 0rem;
+}
 .lvf-card__action {
     background: currentColor;
     color: inherit;
