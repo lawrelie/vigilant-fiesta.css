@@ -108,72 +108,6 @@
     max-block-size: none;
     max-inline-size: none;
 }
-.lvf-card-header {
-    background: none;
-    color: inherit;
-    display: grid;
-    gap: 1rem;
-    grid: "lvf-leading lvf-trailing" auto / var(--lvf-card-header__leading--column-size) var(--lvf-card-header__trailing--column-size);
-    margin: 0;
-    opacity: 1;
-    overflow: visible;
-    padding: 0;
-    position: static;
-    text-align: inherit;
-    white-space: inherit;
-    /* Places */
-    place-content: normal;
-    place-items: normal;
-    align-items: center;
-    /* Sizes */
-    block-size: auto;
-    inline-size: auto;
-    max-block-size: none;
-    max-inline-size: none;
-}
-.lvf-card-header--leading {
-    --lvf-card-header__leading--column-size: max-content;
-    --lvf-card-header__trailing--column-size: auto;
-}
-.lvf-card-header__meta {
-    background: none;
-    color: inherit;
-    display: grid;
-    gap: 0.75rem;
-    grid: auto / auto-flow max-content;
-    inset: auto;
-    margin: 0;
-    opacity: 1;
-    overflow: visible;
-    padding: 0;
-    place-content: normal;
-    place-items: normal;
-    position: relative;
-    text-align: inherit;
-    white-space: inherit;
-    /* Sizes */
-    block-size: auto;
-    inline-size: auto;
-    max-block-size: none;
-    max-inline-size: none;
-}
-.lvf-card-header__text {
-    background: none;
-    color: inherit;
-    display: block;
-    margin: 0;
-    opacity: 1;
-    overflow: visible;
-    padding: 0;
-    position: static;
-    text-align: inherit;
-    white-space: inherit;
-    /* Sizes */
-    block-size: auto;
-    inline-size: auto;
-    max-block-size: none;
-    max-inline-size: none;
-}
 .lvf-card__icon-actions {
     background: none;
     color: inherit;
@@ -191,9 +125,9 @@
     white-space: inherit;
     /* Sizes */
     block-size: auto;
-    inline-size: max-content;
+    inline-size: calc(100% + 0.5rem*2);
     max-block-size: none;
-    max-inline-size: 100%;
+    max-inline-size: max-content;
 }
 .lvf-card__media {
     background: none;
@@ -272,6 +206,72 @@
     padding: 1rem;
     padding-block-start: 0;
     padding-block-end: 0;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card-header {
+    background: none;
+    color: inherit;
+    display: grid;
+    gap: 1rem;
+    grid: "lvf-leading lvf-trailing" auto / var(--lvf-card-header__leading--column-size) var(--lvf-card-header__trailing--column-size);
+    margin: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Places */
+    place-content: normal;
+    place-items: normal;
+    align-items: center;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card-header--leading {
+    --lvf-card-header__leading--column-size: max-content;
+    --lvf-card-header__trailing--column-size: auto;
+}
+.lvf-card-header__meta {
+    background: none;
+    color: inherit;
+    display: grid;
+    gap: 0.75rem;
+    grid: auto / auto-flow max-content;
+    inset: auto;
+    margin: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0;
+    place-content: normal;
+    place-items: normal;
+    position: relative;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
+.lvf-card-header__text {
+    background: none;
+    color: inherit;
+    display: block;
+    margin: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0;
     position: static;
     text-align: inherit;
     white-space: inherit;
