@@ -281,6 +281,26 @@
     max-block-size: none;
     max-inline-size: none;
 }
+.lvf-card-header-text-container {
+    background: none;
+    color: inherit;
+    display: block;
+    inset: auto;
+    margin: 0;
+    opacity: 1;
+    overflow: visible;
+    padding: 0.5rem;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    position: relative;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
 .lvf-card-subhead {
     background: none;
     color: inherit;
