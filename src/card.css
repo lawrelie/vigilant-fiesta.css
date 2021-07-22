@@ -86,9 +86,9 @@
     white-space: inherit;
     /* Sizes */
     block-size: auto;
-    inline-size: max-content;
+    inline-size: 100%;
     max-block-size: none;
-    max-inline-size: 100%;
+    max-inline-size: max-content;
 }
 .lvf-card__content {
     background: none;
@@ -167,9 +167,9 @@
     white-space: inherit;
     /* Sizes */
     block-size: auto;
-    inline-size: max-content;
+    inline-size: 100%;
     max-block-size: none;
-    max-inline-size: 100%;
+    max-inline-size: max-content;
     /* Sizes */
     block-size: auto;
     inline-size: auto;
@@ -319,9 +319,9 @@
     white-space: nowrap;
     /* Sizes */
     block-size: auto;
-    inline-size: max-content;
+    inline-size: 100%;
     max-block-size: none;
-    max-inline-size: 100%;
+    max-inline-size: max-content;
 }
 .lvf-card-subhead__item {
     background: none;
