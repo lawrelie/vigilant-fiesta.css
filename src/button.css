@@ -1,19 +1,28 @@
 :root {
     --lvf-button--block-size: calc(2.25rem + var(--lvf-density));
+    --lvf-button--color--emphasis: var(--lvf-color--emphasis-high);
     --lvf-button--elevation--overlay: var(--lvf-elevation-2--overlay);
     --lvf-button--elevation--shadow: var(--lvf-elevation-2--shadow);
     --lvf-button--min-inline-size: 4rem;
-    --lvf-button--motion: background var(--lvf-motion-small), box-shadow var(--lvf-motion-small);
+    --lvf-button--motion: background var(--lvf-motion-small), box-shadow var(--lvf-motion-small), color var(--lvf-motion-small);
     --lvf-button--shape--size: var(--lvf-shape-small--size);
+    --lvf-button--has-shape-start-start: 0;
+    --lvf-button--has-shape-start-end: 1;
+    --lvf-button--has-shape-end-start: 1;
+    --lvf-button--has-shape-end-end: 1;
+    --lvf-button--surface--opacity: 1;
 }
 .lvf-button {
     background:
         linear-gradient(hsl(var(--lvf-color-surface--hsl), var(--lvf-states--overlay--opacity)), hsl(var(--lvf-color-surface--hsl), var(--lvf-states--overlay--opacity))),
         linear-gradient(var(--lvf-button--elevation--overlay), var(--lvf-button--elevation--overlay)),
-        hsl(var(--lvf-button--color-surface--hsl, var(--lvf-color-on-surface--hsl)));
-    border-radius: var(--lvf-button--shape--size);
+        hsl(var(--lvf-button--color-surface--hsl, var(--lvf-color-on-surface--hsl)), var(--lvf-button--surface--opacity));
+    border-start-start-radius: calc(var(--lvf-button--shape--size)*var(--lvf-button--has-shape-start-start));
+    border-start-end-radius: calc(var(--lvf-button--shape--size)*var(--lvf-button--has-shape-start-end));
+    border-end-start-radius: calc(var(--lvf-button--shape--size)*var(--lvf-button--has-shape-end-start));
+    border-end-end-radius: calc(var(--lvf-button--shape--size)*var(--lvf-button--has-shape-end-end));
     box-shadow: var(--lvf-button--elevation--shadow);
-    color: hsl(var(--lvf-button--color-on-surface--hsl, var(--lvf-color-surface--hsl)), var(--lvf-color--emphasis-high));
+    color: hsl(var(--lvf-button--color-on-surface--hsl, var(--lvf-color-surface--hsl)), var(--lvf-button--color--emphasis));
     display: grid;
     font: var(--lvf-typography-button);
     font-feature-settings: var(--lvf-typography--features);
@@ -37,6 +46,30 @@
     max-inline-size: 100%;
     min-block-size: 0;
     min-inline-size: var(--lvf-button--min-inline-size);
+}
+.lvf-button__icon {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    transition: none;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+    min-block-size: 0;
+    min-inline-size: 0;
 }
 .lvf-button__label {
     background: none;
@@ -63,6 +96,76 @@
     max-inline-size: none;
     min-block-size: 0;
     min-inline-size: 0;
+}
+.lvf-split-button {
+    --lvf-button--min-inline-size: 0rem;
+    --lvf-button--shape--size: var(--lvf-button--block-size);
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: grid;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    gap: 0.5rem;
+    grid: auto / auto-flow auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    place-items: normal;
+    text-align: inherit;
+    text-transform: inherit;
+    transition: none;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+    min-block-size: 0;
+    min-inline-size: 0;
+}
+.lvf-split-button__item {
+    --lvf-button--has-shape-start-start: 0;
+    --lvf-button--has-shape-start-end: 0;
+    --lvf-button--has-shape-end-start: 0;
+    --lvf-button--has-shape-end-end: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    display: block;
+    font: inherit;
+    font-feature-settings: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    place-items: normal;
+    text-align: inherit;
+    text-transform: inherit;
+    transition: none;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+    min-block-size: 0;
+    min-inline-size: 0;
+}
+.lvf-split-button__item:last-child {
+    --lvf-button--has-shape-start-start: 0;
+    --lvf-button--has-shape-start-end: 1;
+    --lvf-button--has-shape-end-start: 0;
+    --lvf-button--has-shape-end-end: 1;
+}
+.lvf-split-button__item:first-child {
+    --lvf-button--has-shape-start-start: 1;
+    --lvf-button--has-shape-start-end: 0;
+    --lvf-button--has-shape-end-start: 1;
+    --lvf-button--has-shape-end-end: 0;
 }
 .lvf-text-button {
     background: hsl(var(--lvf-color-on-surface--hsl), var(--lvf-states--overlay--opacity));
@@ -131,6 +234,8 @@
 :disabled,
 [aria-disabled="true"],
 .lvf-button:not(:any-link):not(:enabled) {
+    --lvf-button--color--emphasis: var(--lvf-color--emphasis-low);
     --lvf-button--elevation--overlay: var(--lvf-elevation-0--overlay);
     --lvf-button--elevation--shadow: var(--lvf-elevation-0--shadow);
+    --lvf-button--surface--opacity: var(--lvf-divider--opacity);
 }
