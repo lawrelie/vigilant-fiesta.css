@@ -32,7 +32,9 @@
     box-shadow: var(--lvf-elevation-24--shadow);
     color: inherit;
     display: block;
-    inset: var(--lvf-dialog--inset);
+    inset: 0;
+    inset-inline-start: var(--lvf-dialog--inset);
+    inset-inline-end: var(--lvf-dialog--inset);
     margin: auto;
     overflow-x: hidden;
     overflow-y: var(--lvf-dialog--overflow-block);
