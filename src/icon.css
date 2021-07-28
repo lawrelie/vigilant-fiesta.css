@@ -5,7 +5,7 @@
     --lvf-icon-check-box: var(--lvf-icon--material--check-box--sharp);
     --lvf-icon-check-box-outline-blank: var(--lvf-icon--material--check-box-outline-blank--sharp);
     --lvf-icon--opacity: 1;
-    --lvf-icon-button--size: calc(2.5rem + var(--lvf-density));
+    --lvf-icon-button--size: 2.5rem;
     --lvf-icon-radio-button-checked: var(--lvf-icon--material--radio-button-checked--sharp);
     --lvf-icon-radio-button-unchecked: var(--lvf-icon--material--radio-button-unchecked--sharp);
     --lvf-icon-web: var(--lvf-icon--material--web--sharp);
