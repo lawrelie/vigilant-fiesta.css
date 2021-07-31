@@ -4,6 +4,9 @@
 }
 .lvf-card {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: grid;
     gap: 0;
@@ -31,6 +34,9 @@
 }
 .lvf-card__action {
     background: currentColor;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     inset: 0;
@@ -49,6 +55,9 @@
 }
 .lvf-card__actions {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: grid;
     gap: 0;
@@ -70,6 +79,9 @@
 }
 .lvf-card__button-actions {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     grid-area: lvf-buttons;
@@ -92,6 +104,9 @@
 }
 .lvf-card__content {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     grid-area: lvf-content;
@@ -110,6 +125,9 @@
 }
 .lvf-card__icon-actions {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     grid-area: lvf-icons;
@@ -131,6 +149,9 @@
 }
 .lvf-card__media {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: flex;
     grid-area: lvf-media;
@@ -152,6 +173,9 @@
 }
 .lvf-card__overline {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     inset: auto;
@@ -178,6 +202,9 @@
 }
 .lvf-card__primary-title {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     margin: 0;
@@ -197,6 +224,9 @@
 }
 .lvf-card__supporting-text {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     margin: 0;
@@ -215,8 +245,32 @@
     max-block-size: none;
     max-inline-size: none;
 }
+.lvf-card-container {
+    --lvf-layout-grid--margin: 1rem;
+    background: var(--lvf-elevation-1--overlay);
+    border: none;
+    border-radius: var(--lvf-shape-small--size);
+    box-shadow: var(--lvf-elevation-1--shadow);
+    color: inherit;
+    display: block;
+    margin: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    position: static;
+    text-align: inherit;
+    white-space: inherit;
+    /* Sizes */
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: none;
+    max-inline-size: none;
+}
 .lvf-card-header {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: grid;
     gap: 1rem;
@@ -244,6 +298,9 @@
 }
 .lvf-card-header__meta {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: grid;
     gap: 0.75rem;
@@ -266,6 +323,9 @@
 }
 .lvf-card-header__text {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     margin: 0;
@@ -283,6 +343,9 @@
 }
 .lvf-card-header-text-container {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     inset: auto;
@@ -303,6 +366,9 @@
 }
 .lvf-card-subhead {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: grid;
     gap: 1em;
@@ -325,6 +391,9 @@
 }
 .lvf-card-subhead__item {
     background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     color: inherit;
     display: block;
     margin: 0;
