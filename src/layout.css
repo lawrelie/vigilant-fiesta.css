@@ -1,5 +1,5 @@
 :root {
-    --lvf-layout-grid--columns: calc(var(--lvf-layout-grid--columns-12)/4);
+    --lvf-layout-grid--columns: 1;
     --lvf-layout-grid--columns-1: 1;
     --lvf-layout-grid--columns-2: 2;
     --lvf-layout-grid--columns-3: 3;
@@ -17,6 +17,7 @@
 }
 @media (min-width: 37.5rem) {
     :root {
+        --lvf-layout-grid--columns: 2;
         --lvf-layout-grid--columns-5: 5;
         --lvf-layout-grid--columns-6: 6;
         --lvf-layout-grid--columns-7: 7;
@@ -27,6 +28,7 @@
 }
 @media (min-width: 56.5625rem) {
     :root {
+        --lvf-layout-grid--columns: 3;
         --lvf-layout-grid--columns-9: 9;
         --lvf-layout-grid--columns-10: 10;
         --lvf-layout-grid--columns-11: 11;
