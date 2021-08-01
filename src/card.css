@@ -1,4 +1,5 @@
 :root {
+    --lvf-card--position: relative;
     --lvf-card-header__leading--column-size: auto;
     --lvf-card-header__trailing--column-size: max-content;
 }
@@ -20,7 +21,7 @@
     padding-block-end: calc(0.5rem + var(--lvf-density)/2);
     place-content: normal;
     place-items: normal;
-    position: relative;
+    position: var(--lvf-card--position);
     text-align: inherit;
     white-space: inherit;
     /* Sizes */
@@ -246,10 +247,11 @@
     max-inline-size: none;
 }
 .lvf-card-container {
+    --lvf-card--position: static;
     --lvf-layout-grid--margin: 1rem;
     background: var(--lvf-elevation-1--overlay);
     border: none;
-    border-radius: var(--lvf-shape-small--size);
+    border-radius: var(--lvf-shape-medium--size);
     box-shadow: var(--lvf-elevation-1--shadow);
     color: inherit;
     display: block;
@@ -257,7 +259,7 @@
     opacity: 1;
     overflow: hidden;
     padding: 0;
-    position: static;
+    position: relative;
     text-align: inherit;
     white-space: inherit;
     /* Sizes */
