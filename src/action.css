@@ -10,7 +10,7 @@
     background: none;
     border-radius: 0;
     box-shadow: none;
-    color: inherit;
+    color: var(--lvf-action--color-on-surface, currentColor);
     content: normal;
     display: flex;
     inset: auto;
