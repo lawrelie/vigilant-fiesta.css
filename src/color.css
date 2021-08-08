@@ -21,6 +21,7 @@
     --lvf-color-on-background--l: calc(var(--lvf-color-on-background--darker--l) + var(--lvf-color-lighter--l));
     --lvf-color-on-background--darker--l: min(var(--lvf-color-light--l), calc(100% - var(--lvf-color-lighter--l)));
     --lvf-color-on-background--hsl: var(--lvf-color-on-background--h), var(--lvf-color-on-background--s), var(--lvf-color-on-background--l);
+    --lvf-color-primary--hsl: var(--lvf-color-light--h), var(--lvf-color-light--s), var(--lvf-color-light--l);
     --lvf-color-surface--hsl: var(--lvf-color-background--hsl);
     --lvf-color-on-surface--hsl: var(--lvf-color-on-background--hsl);
 }
@@ -33,6 +34,7 @@
         --lvf-color-on-background--s: var(--lvf-color-dark--s);
         --lvf-color-on-background--l: calc(var(--lvf-color-on-background--lighter--l) + var(--lvf-color-darker--l));
         --lvf-color-on-background--lighter--l: max(var(--lvf-color-dark--l), calc(var(--lvf-color-darker--l)*-1));
+        --lvf-color-primary--hsl: var(--lvf-color-dark--h), var(--lvf-color-dark--s), var(--lvf-color-dark--l);
     }
 }
 @media print {
