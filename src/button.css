@@ -6,7 +6,7 @@
     --lvf-button--min-inline-size: 4rem;
     --lvf-button--motion: background var(--lvf-motion-small), box-shadow var(--lvf-motion-small), color var(--lvf-motion-small);
     --lvf-button--shape--size: var(--lvf-shape-small--size);
-    --lvf-button--has-shape-start-start: 0;
+    --lvf-button--has-shape-start-start: 1;
     --lvf-button--has-shape-start-end: 1;
     --lvf-button--has-shape-end-start: 1;
     --lvf-button--has-shape-end-end: 1;
