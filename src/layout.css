@@ -65,3 +65,11 @@
 .lvf-layout-grid > * {
     --lvf-layout-grid--margin: 0rem;
 }
+.lvf-layout-grid-container {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-block-start: var(--lvf-layout-grid--gutter);
+    padding-block-end: var(--lvf-layout-grid--gutter);
+    text-align: inherit;
+}
